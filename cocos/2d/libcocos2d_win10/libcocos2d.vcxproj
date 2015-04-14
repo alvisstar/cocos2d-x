@@ -26,6 +26,509 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\external\flatbuffers\flatc.cpp" />
+    <ClCompile Include="..\..\..\external\flatbuffers\idl_gen_cpp.cpp" />
+    <ClCompile Include="..\..\..\external\flatbuffers\idl_gen_fbs.cpp" />
+    <ClCompile Include="..\..\..\external\flatbuffers\idl_gen_general.cpp" />
+    <ClCompile Include="..\..\..\external\flatbuffers\idl_gen_go.cpp" />
+    <ClCompile Include="..\..\..\external\flatbuffers\idl_gen_text.cpp" />
+    <ClCompile Include="..\..\..\external\flatbuffers\idl_parser.cpp" />
+    <ClCompile Include="..\..\3d\CCAABB.cpp" />
+    <ClCompile Include="..\..\3d\CCAnimate3D.cpp" />
+    <ClCompile Include="..\..\3d\CCAnimation3D.cpp" />
+    <ClCompile Include="..\..\3d\CCAttachNode.cpp" />
+    <ClCompile Include="..\..\3d\CCBillBoard.cpp" />
+    <ClCompile Include="..\..\3d\CCBundle3D.cpp" />
+    <ClCompile Include="..\..\3d\CCBundleReader.cpp" />
+    <ClCompile Include="..\..\3d\CCFrustum.cpp" />
+    <ClCompile Include="..\..\3d\CCMesh.cpp" />
+    <ClCompile Include="..\..\3d\CCMeshSkin.cpp" />
+    <ClCompile Include="..\..\3d\CCMeshVertexIndexData.cpp" />
+    <ClCompile Include="..\..\3d\CCOBB.cpp" />
+    <ClCompile Include="..\..\3d\CCObjLoader.cpp" />
+    <ClCompile Include="..\..\3d\CCPlane.cpp" />
+    <ClCompile Include="..\..\3d\CCRay.cpp" />
+    <ClCompile Include="..\..\3d\CCSkeleton3D.cpp" />
+    <ClCompile Include="..\..\3d\CCSkybox.cpp" />
+    <ClCompile Include="..\..\3d\CCSprite3D.cpp" />
+    <ClCompile Include="..\..\3d\CCSprite3DMaterial.cpp" />
+    <ClCompile Include="..\..\3d\CCTerrain.cpp" />
+    <ClCompile Include="..\..\3d\CCTextureCube.cpp" />
+    <ClCompile Include="..\..\audio\winrt\Audio.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\winrt\MediaStreamer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\winrt\SimpleAudioEngine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\base\allocator\CCAllocatorDiagnostics.cpp" />
+    <ClCompile Include="..\..\base\allocator\CCAllocatorGlobal.cpp" />
+    <ClCompile Include="..\..\base\allocator\CCAllocatorGlobalNewDelete.cpp" />
+    <ClCompile Include="..\..\base\atitc.cpp" />
+    <ClCompile Include="..\..\base\base64.cpp" />
+    <ClCompile Include="..\..\base\CCAsyncTaskPool.cpp" />
+    <ClCompile Include="..\..\base\CCAutoreleasePool.cpp" />
+    <ClCompile Include="..\..\base\ccCArray.cpp" />
+    <ClCompile Include="..\..\base\CCConfiguration.cpp" />
+    <ClCompile Include="..\..\base\CCConsole.cpp" />
+    <ClCompile Include="..\..\base\CCController-android.cpp" />
+    <ClCompile Include="..\..\base\CCController.cpp" />
+    <ClCompile Include="..\..\base\CCData.cpp" />
+    <ClCompile Include="..\..\base\CCDataVisitor.cpp" />
+    <ClCompile Include="..\..\base\CCDirector.cpp" />
+    <ClCompile Include="..\..\base\CCEvent.cpp" />
+    <ClCompile Include="..\..\base\CCEventAcceleration.cpp" />
+    <ClCompile Include="..\..\base\CCEventController.cpp" />
+    <ClCompile Include="..\..\base\CCEventCustom.cpp" />
+    <ClCompile Include="..\..\base\CCEventDispatcher.cpp" />
+    <ClCompile Include="..\..\base\CCEventFocus.cpp" />
+    <ClCompile Include="..\..\base\CCEventKeyboard.cpp" />
+    <ClCompile Include="..\..\base\CCEventListener.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerAcceleration.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerController.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerCustom.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerFocus.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerKeyboard.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerMouse.cpp" />
+    <ClCompile Include="..\..\base\CCEventListenerTouch.cpp" />
+    <ClCompile Include="..\..\base\CCEventMouse.cpp" />
+    <ClCompile Include="..\..\base\CCEventTouch.cpp" />
+    <ClCompile Include="..\..\base\ccFPSImages.c" />
+    <ClCompile Include="..\..\base\CCIMEDispatcher.cpp" />
+    <ClCompile Include="..\..\base\CCNS.cpp" />
+    <ClCompile Include="..\..\base\CCProfiling.cpp" />
+    <ClCompile Include="..\..\base\ccRandom.cpp" />
+    <ClCompile Include="..\..\base\CCRef.cpp" />
+    <ClCompile Include="..\..\base\CCScheduler.cpp" />
+    <ClCompile Include="..\..\base\CCScriptSupport.cpp" />
+    <ClCompile Include="..\..\base\CCTouch.cpp" />
+    <ClCompile Include="..\..\base\ccTypes.cpp" />
+    <ClCompile Include="..\..\base\CCUserDefault-android.cpp" />
+    <ClCompile Include="..\..\base\CCUserDefault.cpp" />
+    <ClCompile Include="..\..\base\ccUTF8.cpp" />
+    <ClCompile Include="..\..\base\ccUtils.cpp" />
+    <ClCompile Include="..\..\base\CCValue.cpp" />
+    <ClCompile Include="..\..\base\etc1.cpp" />
+    <ClCompile Include="..\..\base\ObjectFactory.cpp" />
+    <ClCompile Include="..\..\base\pvr.cpp" />
+    <ClCompile Include="..\..\base\s3tc.cpp" />
+    <ClCompile Include="..\..\base\TGAlib.cpp" />
+    <ClCompile Include="..\..\base\ZipUtils.cpp" />
+    <ClCompile Include="..\..\cocos2d.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCBAnimationManager.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCBFileLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCBKeyframe.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCBReader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCBSequence.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCBSequenceProperty.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCControlButtonLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCControlLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCLabelBMFontLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCLabelTTFLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCLayerColorLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCLayerGradientLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCLayerLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCMenuItemImageLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCMenuItemLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCNode+CCBRelativePositioning.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCNodeLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCNodeLoaderLibrary.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCParticleSystemQuadLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCScale9SpriteLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCScrollViewLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocosbuilder\CCSpriteLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\ActionTimeline\CCActionTimeline.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\ActionTimeline\CCActionTimelineCache.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\ActionTimeline\CCActionTimelineNode.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\ActionTimeline\CCFrame.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\ActionTimeline\CCTimeLine.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\ActionTimeline\CSLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCActionFrame.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCActionFrameEasing.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCActionManagerEx.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCActionNode.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCActionObject.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCArmature.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCArmatureAnimation.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCArmatureDataManager.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCArmatureDefine.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCBatchNode.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCBone.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCColliderDetector.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCComAttribute.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCComAudio.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCComController.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCComRender.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCDataReaderHelper.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCDatas.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCDecorativeDisplay.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCDisplayFactory.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCDisplayManager.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCInputDelegate.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCObjectExtensionData.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCProcessBase.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCSkin.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCSpriteFrameCacheHelper.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCTransformHelp.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCTween.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCUtilMath.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CocoLoader.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CocoStudio.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\DictionaryHelper.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\FlatBuffersSerialize.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\TriggerBase.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\TriggerMng.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\TriggerObj.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\WidgetCallBackHandlerProtocol.cpp" />
+    <ClCompile Include="..\..\platform\winrt\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CCAction.cpp" />
+    <ClCompile Include="..\CCActionCamera.cpp" />
+    <ClCompile Include="..\CCActionCatmullRom.cpp" />
+    <ClCompile Include="..\CCActionEase.cpp" />
+    <ClCompile Include="..\CCActionGrid.cpp" />
+    <ClCompile Include="..\CCActionGrid3D.cpp" />
+    <ClCompile Include="..\CCActionInstant.cpp" />
+    <ClCompile Include="..\CCActionInterval.cpp" />
+    <ClCompile Include="..\CCActionManager.cpp" />
+    <ClCompile Include="..\CCActionPageTurn3D.cpp" />
+    <ClCompile Include="..\CCActionProgressTimer.cpp" />
+    <ClCompile Include="..\CCActionTiledGrid.cpp" />
+    <ClCompile Include="..\CCActionTween.cpp" />
+    <ClCompile Include="..\CCAnimation.cpp" />
+    <ClCompile Include="..\CCAnimationCache.cpp" />
+    <ClCompile Include="..\CCAtlasNode.cpp" />
+    <ClCompile Include="..\CCCamera.cpp" />
+    <ClCompile Include="..\CCClippingNode.cpp" />
+    <ClCompile Include="..\CCClippingRectangleNode.cpp" />
+    <ClCompile Include="..\CCComponent.cpp" />
+    <ClCompile Include="..\CCComponentContainer.cpp" />
+    <ClCompile Include="..\CCDrawingPrimitives.cpp" />
+    <ClCompile Include="..\CCDrawNode.cpp" />
+    <ClCompile Include="..\CCFastTMXLayer.cpp" />
+    <ClCompile Include="..\CCFastTMXTiledMap.cpp" />
+    <ClCompile Include="..\CCFont.cpp" />
+    <ClCompile Include="..\CCFontAtlas.cpp" />
+    <ClCompile Include="..\CCFontAtlasCache.cpp" />
+    <ClCompile Include="..\CCFontCharMap.cpp" />
+    <ClCompile Include="..\CCFontFNT.cpp" />
+    <ClCompile Include="..\CCFontFreeType.cpp" />
+    <ClCompile Include="..\CCGLBufferedNode.cpp" />
+    <ClCompile Include="..\CCGrabber.cpp" />
+    <ClCompile Include="..\CCGrid.cpp" />
+    <ClCompile Include="..\CCLabel.cpp" />
+    <ClCompile Include="..\CCLabelAtlas.cpp" />
+    <ClCompile Include="..\CCLabelBMFont.cpp" />
+    <ClCompile Include="..\CCLabelTextFormatter.cpp" />
+    <ClCompile Include="..\CCLabelTTF.cpp" />
+    <ClCompile Include="..\CCLayer.cpp" />
+    <ClCompile Include="..\CCLight.cpp" />
+    <ClCompile Include="..\CCMenu.cpp" />
+    <ClCompile Include="..\CCMenuItem.cpp" />
+    <ClCompile Include="..\CCMotionStreak.cpp" />
+    <ClCompile Include="..\CCNode.cpp" />
+    <ClCompile Include="..\CCNodeGrid.cpp" />
+    <ClCompile Include="..\CCParallaxNode.cpp" />
+    <ClCompile Include="..\CCParticleBatchNode.cpp" />
+    <ClCompile Include="..\CCParticleExamples.cpp" />
+    <ClCompile Include="..\CCParticleSystem.cpp" />
+    <ClCompile Include="..\CCParticleSystemQuad.cpp" />
+    <ClCompile Include="..\CCProgressTimer.cpp" />
+    <ClCompile Include="..\CCProtectedNode.cpp" />
+    <ClCompile Include="..\CCRenderTexture.cpp" />
+    <ClCompile Include="..\CCScene.cpp" />
+    <ClCompile Include="..\CCSprite.cpp" />
+    <ClCompile Include="..\CCSpriteBatchNode.cpp" />
+    <ClCompile Include="..\CCSpriteFrame.cpp" />
+    <ClCompile Include="..\CCSpriteFrameCache.cpp" />
+    <ClCompile Include="..\CCTextFieldTTF.cpp" />
+    <ClCompile Include="..\CCTileMapAtlas.cpp" />
+    <ClCompile Include="..\CCTMXLayer.cpp" />
+    <ClCompile Include="..\CCTMXObjectGroup.cpp" />
+    <ClCompile Include="..\CCTMXTiledMap.cpp" />
+    <ClCompile Include="..\CCTMXXMLParser.cpp" />
+    <ClCompile Include="..\CCTransition.cpp" />
+    <ClCompile Include="..\CCTransitionPageTurn.cpp" />
+    <ClCompile Include="..\CCTransitionProgress.cpp" />
+    <ClCompile Include="..\CCTweenFunction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\external\flatbuffers\flatbuffers.h" />
+    <ClInclude Include="..\..\..\external\flatbuffers\idl.h" />
+    <ClInclude Include="..\..\..\external\flatbuffers\util.h" />
+    <ClInclude Include="..\..\3d\CCAABB.h" />
+    <ClInclude Include="..\..\3d\CCAnimate3D.h" />
+    <ClInclude Include="..\..\3d\CCAnimation3D.h" />
+    <ClInclude Include="..\..\3d\CCAnimationCurve.h" />
+    <ClInclude Include="..\..\3d\CCAttachNode.h" />
+    <ClInclude Include="..\..\3d\CCBillBoard.h" />
+    <ClInclude Include="..\..\3d\CCBundle3D.h" />
+    <ClInclude Include="..\..\3d\CCBundle3DData.h" />
+    <ClInclude Include="..\..\3d\CCBundleReader.h" />
+    <ClInclude Include="..\..\3d\CCFrustum.h" />
+    <ClInclude Include="..\..\3d\CCMesh.h" />
+    <ClInclude Include="..\..\3d\CCMeshSkin.h" />
+    <ClInclude Include="..\..\3d\CCMeshVertexIndexData.h" />
+    <ClInclude Include="..\..\3d\CCOBB.h" />
+    <ClInclude Include="..\..\3d\CCObjLoader.h" />
+    <ClInclude Include="..\..\3d\CCPlane.h" />
+    <ClInclude Include="..\..\3d\CCRay.h" />
+    <ClInclude Include="..\..\3d\CCSkeleton3D.h" />
+    <ClInclude Include="..\..\3d\CCSkybox.h" />
+    <ClInclude Include="..\..\3d\CCSprite3D.h" />
+    <ClInclude Include="..\..\3d\CCSprite3DMaterial.h" />
+    <ClInclude Include="..\..\3d\CCTerrain.h" />
+    <ClInclude Include="..\..\3d\CCTextureCube.h" />
+    <ClInclude Include="..\..\3d\cocos3d.h" />
+    <ClInclude Include="..\..\audio\include\AudioEngine.h" />
+    <ClInclude Include="..\..\audio\include\Export.h" />
+    <ClInclude Include="..\..\audio\include\SimpleAudioEngine.h" />
+    <ClInclude Include="..\..\audio\winrt\Audio.h" />
+    <ClInclude Include="..\..\audio\winrt\MediaStreamer.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorBase.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorDiagnostics.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorGlobal.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorMacros.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorMutex.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorStrategyDefault.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorStrategyFixedBlock.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorStrategyGlobalSmallBlock.h" />
+    <ClInclude Include="..\..\base\allocator\CCAllocatorStrategyPool.h" />
+    <ClInclude Include="..\..\base\atitc.h" />
+    <ClInclude Include="..\..\base\base64.h" />
+    <ClInclude Include="..\..\base\CCAsyncTaskPool.h" />
+    <ClInclude Include="..\..\base\CCAutoreleasePool.h" />
+    <ClInclude Include="..\..\base\ccCArray.h" />
+    <ClInclude Include="..\..\base\ccConfig.h" />
+    <ClInclude Include="..\..\base\CCConfiguration.h" />
+    <ClInclude Include="..\..\base\CCConsole.h" />
+    <ClInclude Include="..\..\base\CCController.h" />
+    <ClInclude Include="..\..\base\CCData.h" />
+    <ClInclude Include="..\..\base\CCDataVisitor.h" />
+    <ClInclude Include="..\..\base\CCDirector.h" />
+    <ClInclude Include="..\..\base\CCEvent.h" />
+    <ClInclude Include="..\..\base\CCEventAcceleration.h" />
+    <ClInclude Include="..\..\base\CCEventController.h" />
+    <ClInclude Include="..\..\base\CCEventCustom.h" />
+    <ClInclude Include="..\..\base\CCEventDispatcher.h" />
+    <ClInclude Include="..\..\base\CCEventFocus.h" />
+    <ClInclude Include="..\..\base\CCEventKeyboard.h" />
+    <ClInclude Include="..\..\base\CCEventListener.h" />
+    <ClInclude Include="..\..\base\CCEventListenerAcceleration.h" />
+    <ClInclude Include="..\..\base\CCEventListenerController.h" />
+    <ClInclude Include="..\..\base\CCEventListenerCustom.h" />
+    <ClInclude Include="..\..\base\CCEventListenerFocus.h" />
+    <ClInclude Include="..\..\base\CCEventListenerKeyboard.h" />
+    <ClInclude Include="..\..\base\CCEventListenerMouse.h" />
+    <ClInclude Include="..\..\base\CCEventListenerTouch.h" />
+    <ClInclude Include="..\..\base\CCEventMouse.h" />
+    <ClInclude Include="..\..\base\CCEventTouch.h" />
+    <ClInclude Include="..\..\base\CCEventType.h" />
+    <ClInclude Include="..\..\base\ccFPSImages.h" />
+    <ClInclude Include="..\..\base\CCGameController.h" />
+    <ClInclude Include="..\..\base\CCIMEDelegate.h" />
+    <ClInclude Include="..\..\base\CCIMEDispatcher.h" />
+    <ClInclude Include="..\..\base\ccMacros.h" />
+    <ClInclude Include="..\..\base\CCMap.h" />
+    <ClInclude Include="..\..\base\CCNS.h" />
+    <ClInclude Include="..\..\base\CCProfiling.h" />
+    <ClInclude Include="..\..\base\CCProtocols.h" />
+    <ClInclude Include="..\..\base\ccRandom.h" />
+    <ClInclude Include="..\..\base\CCRef.h" />
+    <ClInclude Include="..\..\base\CCRefPtr.h" />
+    <ClInclude Include="..\..\base\CCScheduler.h" />
+    <ClInclude Include="..\..\base\CCScriptSupport.h" />
+    <ClInclude Include="..\..\base\CCTouch.h" />
+    <ClInclude Include="..\..\base\ccTypes.h" />
+    <ClInclude Include="..\..\base\CCUserDefault.h" />
+    <ClInclude Include="..\..\base\ccUTF8.h" />
+    <ClInclude Include="..\..\base\ccUtils.h" />
+    <ClInclude Include="..\..\base\CCValue.h" />
+    <ClInclude Include="..\..\base\CCVector.h" />
+    <ClInclude Include="..\..\base\etc1.h" />
+    <ClInclude Include="..\..\base\firePngData.h" />
+    <ClInclude Include="..\..\base\ObjectFactory.h" />
+    <ClInclude Include="..\..\base\pvr.h" />
+    <ClInclude Include="..\..\base\s3tc.h" />
+    <ClInclude Include="..\..\base\TGAlib.h" />
+    <ClInclude Include="..\..\base\uthash.h" />
+    <ClInclude Include="..\..\base\utlist.h" />
+    <ClInclude Include="..\..\base\ZipUtils.h" />
+    <ClInclude Include="..\..\cocos2d.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBAnimationManager.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBFileLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBKeyframe.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBMemberVariableAssigner.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBReader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBSelectorResolver.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBSequence.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCBSequenceProperty.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCControlButtonLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCControlLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCLabelBMFontLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCLabelTTFLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCLayerColorLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCLayerGradientLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCLayerLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCMenuItemImageLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCMenuItemLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCMenuLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCNode+CCBRelativePositioning.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCNodeLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCNodeLoaderLibrary.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCNodeLoaderListener.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCParticleSystemQuadLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCScale9SpriteLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCScrollViewLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CCSpriteLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocosbuilder\CocosBuilder.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CCActionTimeline.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CCActionTimelineCache.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CCActionTimelineNode.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CCFrame.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CCTimeLine.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CCTimelineMacro.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\ActionTimeline\CSLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCActionFrame.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCActionFrameEasing.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCActionManagerEx.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCActionNode.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCActionObject.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCArmature.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCArmatureAnimation.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCArmatureDataManager.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCArmatureDefine.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCBatchNode.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCBone.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCColliderDetector.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCComAttribute.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCComAudio.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCComBase.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCComController.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCComRender.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCDataReaderHelper.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCDatas.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCDecorativeDisplay.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCDisplayFactory.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCDisplayManager.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCInputDelegate.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCObjectExtensionData.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCProcessBase.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCSkin.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCSpriteFrameCacheHelper.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCTransformHelp.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCTween.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCUtilMath.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CocoLoader.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CocosStudioExport.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CocoStudio.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CSParse3DBinary_generated.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CSParseBinary_generated.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\DictionaryHelper.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\FlatBuffersSerialize.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\TriggerBase.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\TriggerMng.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\TriggerObj.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\WidgetCallBackHandlerProtocol.h" />
+    <ClInclude Include="..\..\platform\winrt\pch.h" />
+    <ClInclude Include="..\CCAction.h" />
+    <ClInclude Include="..\CCActionCamera.h" />
+    <ClInclude Include="..\CCActionCatmullRom.h" />
+    <ClInclude Include="..\CCActionEase.h" />
+    <ClInclude Include="..\CCActionGrid.h" />
+    <ClInclude Include="..\CCActionGrid3D.h" />
+    <ClInclude Include="..\CCActionInstant.h" />
+    <ClInclude Include="..\CCActionInterval.h" />
+    <ClInclude Include="..\CCActionManager.h" />
+    <ClInclude Include="..\CCActionPageTurn3D.h" />
+    <ClInclude Include="..\CCActionProgressTimer.h" />
+    <ClInclude Include="..\CCActionTiledGrid.h" />
+    <ClInclude Include="..\CCActionTween.h" />
+    <ClInclude Include="..\CCAnimation.h" />
+    <ClInclude Include="..\CCAnimationCache.h" />
+    <ClInclude Include="..\CCAtlasNode.h" />
+    <ClInclude Include="..\CCCamera.h" />
+    <ClInclude Include="..\CCClippingNode.h" />
+    <ClInclude Include="..\CCClippingRectangleNode.h" />
+    <ClInclude Include="..\CCComponent.h" />
+    <ClInclude Include="..\CCComponentContainer.h" />
+    <ClInclude Include="..\CCDrawingPrimitives.h" />
+    <ClInclude Include="..\CCDrawNode.h" />
+    <ClInclude Include="..\CCFastTMXLayer.h" />
+    <ClInclude Include="..\CCFastTMXTiledMap.h" />
+    <ClInclude Include="..\CCFont.h" />
+    <ClInclude Include="..\CCFontAtlas.h" />
+    <ClInclude Include="..\CCFontAtlasCache.h" />
+    <ClInclude Include="..\CCFontCharMap.h" />
+    <ClInclude Include="..\CCFontFNT.h" />
+    <ClInclude Include="..\CCFontFreeType.h" />
+    <ClInclude Include="..\CCGLBufferedNode.h" />
+    <ClInclude Include="..\CCGrabber.h" />
+    <ClInclude Include="..\CCGrid.h" />
+    <ClInclude Include="..\CCLabel.h" />
+    <ClInclude Include="..\CCLabelAtlas.h" />
+    <ClInclude Include="..\CCLabelBMFont.h" />
+    <ClInclude Include="..\CCLabelTextFormatter.h" />
+    <ClInclude Include="..\CCLabelTTF.h" />
+    <ClInclude Include="..\CCLayer.h" />
+    <ClInclude Include="..\CCLight.h" />
+    <ClInclude Include="..\CCMenu.h" />
+    <ClInclude Include="..\CCMenuItem.h" />
+    <ClInclude Include="..\CCMotionStreak.h" />
+    <ClInclude Include="..\CCNode.h" />
+    <ClInclude Include="..\CCNodeGrid.h" />
+    <ClInclude Include="..\CCParallaxNode.h" />
+    <ClInclude Include="..\CCParticleBatchNode.h" />
+    <ClInclude Include="..\CCParticleExamples.h" />
+    <ClInclude Include="..\CCParticleSystem.h" />
+    <ClInclude Include="..\CCParticleSystemQuad.h" />
+    <ClInclude Include="..\CCProgressTimer.h" />
+    <ClInclude Include="..\CCProtectedNode.h" />
+    <ClInclude Include="..\CCRenderTexture.h" />
+    <ClInclude Include="..\CCScene.h" />
+    <ClInclude Include="..\CCSprite.h" />
+    <ClInclude Include="..\CCSpriteBatchNode.h" />
+    <ClInclude Include="..\CCSpriteFrame.h" />
+    <ClInclude Include="..\CCSpriteFrameCache.h" />
+    <ClInclude Include="..\CCTextFieldTTF.h" />
+    <ClInclude Include="..\CCTileMapAtlas.h" />
+    <ClInclude Include="..\CCTMXLayer.h" />
+    <ClInclude Include="..\CCTMXObjectGroup.h" />
+    <ClInclude Include="..\CCTMXTiledMap.h" />
+    <ClInclude Include="..\CCTMXXMLParser.h" />
+    <ClInclude Include="..\CCTransition.h" />
+    <ClInclude Include="..\CCTransitionPageTurn.h" />
+    <ClInclude Include="..\CCTransitionProgress.h" />
+    <ClInclude Include="..\CCTweenFunction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\base\CCController-iOS.mm" />
+    <None Include="..\..\base\CCUserDefault-apple.mm" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{07c2895d-720c-487d-b7b4-12c293ea533f}</ProjectGuid>
     <Keyword>DynamicLibrary</Keyword>
@@ -78,21 +581,33 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\winrt_8.1_props\cocos2d_winrt_8.1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\winrt_8.1_props\cocos2d_winrt_8.1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\winrt_8.1_props\cocos2d_winrt_8.1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\winrt_8.1_props\cocos2d_winrt_8.1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\winrt_8.1_props\cocos2d_winrt_8.1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\win10_props\cocos2d_win10_platform.props" />
+    <Import Project="..\winrt_8.1_props\cocos2d_winrt_8.1.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -123,7 +638,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAsWinRT>false</CompileAsWinRT>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +651,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAsWinRT>false</CompileAsWinRT>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +664,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAsWinRT>false</CompileAsWinRT>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,7 +677,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAsWinRT>false</CompileAsWinRT>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -167,7 +690,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAsWinRT>false</CompileAsWinRT>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -178,7 +703,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAsWinRT>false</CompileAsWinRT>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
