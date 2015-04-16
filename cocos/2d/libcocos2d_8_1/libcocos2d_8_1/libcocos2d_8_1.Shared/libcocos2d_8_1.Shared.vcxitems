@@ -14,12 +14,6 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManager.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManagerEx.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventAssetsManagerEx.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventListenerAssetsManagerEx.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Downloader.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Manifest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\cocos-ext.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\ExtensionExport.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\ExtensionMacros.h" />
@@ -430,6 +424,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\math\Vec3.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\math\Vec4.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpClient.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpConnection-winrt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpCookie.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpRequest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpResponse.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\SocketIO.h" />
@@ -598,12 +594,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManager.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManagerEx.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventAssetsManagerEx.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventListenerAssetsManagerEx.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Downloader.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Manifest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\GUI\CCControlExtension\CCControl.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\GUI\CCControlExtension\CCControlButton.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\GUI\CCControlExtension\CCControlColourPicker.cpp" />
@@ -995,7 +985,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\math\Vec2.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\math\Vec3.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\math\Vec4.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpClient.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpClient-winrt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpConnection-winrt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpCookie.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\SocketIO.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\WebSocket.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\physics\CCPhysicsBody.cpp" />

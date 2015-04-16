@@ -34,7 +34,9 @@ public:
         addTest("Click and Move", [](){return new ClickAndMoveTest(); });
         addTest("Configuration", []() { return new ConfigurationTests(); });
         addTest("Console", []() { return new ConsoleTests(); });
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT)
         addTest("Curl", []() { return new CurlTests(); });
+#endif
         addTest("Current Language", []() { return new CurrentLanguageTests(); });
         addTest("CocosStudio3D Test", []() { return new CocosStudio3DTests(); });
         addTest("EventDispatcher", []() { return new EventDispatcherTests(); });

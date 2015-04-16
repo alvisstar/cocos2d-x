@@ -531,9 +531,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ui\UITextField.h">
       <Filter>ui\UIWidgets</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManager.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\GUI\CCControlExtension\CCControl.h">
       <Filter>extension\GUI\CCControlExtensions</Filter>
     </ClInclude>
@@ -762,21 +759,6 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ui\UILayoutComponent.h">
       <Filter>ui\Layouts</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManagerEx.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventAssetsManagerEx.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventListenerAssetsManagerEx.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Downloader.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Manifest.h">
-      <Filter>extension\AssetsManager</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\Keyboard-winrt.h">
       <Filter>platform\winrt</Filter>
@@ -1746,6 +1728,12 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\WICImageLoader-win.h">
       <Filter>platform\winrt</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpCookie.h">
+      <Filter>network\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpConnection-winrt.h">
+      <Filter>network\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cocos2d.cpp" />
@@ -2223,9 +2211,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ui\UITextField.cpp">
       <Filter>ui\UIWidgets</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManager.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\GUI\CCControlExtension\CCControl.cpp">
       <Filter>extension\GUI\CCControlExtensions</Filter>
     </ClCompile>
@@ -2273,9 +2258,6 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\physics-nodes\CCPhysicsSprite.cpp">
       <Filter>extension\physics_nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpClient.cpp">
-      <Filter>network\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\SocketIO.cpp">
       <Filter>network\Source Files</Filter>
@@ -2391,21 +2373,6 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ui\UILayoutComponent.cpp">
       <Filter>ui\Layouts</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\AssetsManagerEx.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventAssetsManagerEx.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\CCEventListenerAssetsManagerEx.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Downloader.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\extensions\assets-manager\Manifest.cpp">
-      <Filter>extension\AssetsManager</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\Keyboard-winrt.cpp">
       <Filter>platform\winrt</Filter>
@@ -3321,6 +3288,15 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\WICImageLoader-win.cpp">
       <Filter>platform\winrt</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpCookie.cpp">
+      <Filter>network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpConnection-winrt.cpp">
+      <Filter>network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpClient-winrt.cpp">
+      <Filter>network\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2d">
@@ -3500,9 +3476,6 @@
     <Filter Include="ui\UIWidgets\ScrollWidget">
       <UniqueIdentifier>{b8bf48f3-8e10-4010-ae69-367715f2755a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="extension\AssetsManager">
-      <UniqueIdentifier>{03cfe246-9a82-45ed-8a0f-f5e7baa91e0d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="extension\GUI">
       <UniqueIdentifier>{9a84f2c8-f6bb-4c38-9669-b1c6e45ef658}</UniqueIdentifier>
     </Filter>
@@ -3571,6 +3544,9 @@
     </Filter>
     <Filter Include="extension\Particle3D\PU">
       <UniqueIdentifier>{ed044d4b-058f-4cee-911e-49fad0a03953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extension\AssetsManager">
+      <UniqueIdentifier>{49fca40e-fcf3-4859-9a3c-f8161c661956}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
