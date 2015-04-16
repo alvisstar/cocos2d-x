@@ -1794,6 +1794,12 @@
     <ClCompile Include="..\..\network\HttpConnection-winrt.cpp">
       <Filter>network</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\editor-support\cocostudio\CCSGUIReader.cpp">
+      <Filter>cocostudio\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\editor-support\cocostudio\CCSSceneReader.cpp">
+      <Filter>cocostudio\reader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\cocos2d.h" />
@@ -3525,6 +3531,12 @@
     </ClInclude>
     <ClInclude Include="..\..\network\HttpConnection-winrt.h">
       <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\editor-support\cocostudio\CCSGUIReader.h">
+      <Filter>cocostudio\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\editor-support\cocostudio\CCSSceneReader.h">
+      <Filter>cocostudio\reader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

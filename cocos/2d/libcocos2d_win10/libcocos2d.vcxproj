@@ -478,8 +478,10 @@
     <ClCompile Include="..\..\editor-support\cocostudio\CCInputDelegate.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCObjectExtensionData.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCProcessBase.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCSGUIReader.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCSkin.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCSpriteFrameCacheHelper.cpp" />
+    <ClCompile Include="..\..\editor-support\cocostudio\CCSSceneReader.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCTransformHelp.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCTween.cpp" />
     <ClCompile Include="..\..\editor-support\cocostudio\CCUtilMath.cpp" />
@@ -1039,8 +1041,10 @@
     <ClInclude Include="..\..\editor-support\cocostudio\CCInputDelegate.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCObjectExtensionData.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCProcessBase.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCSGUIReader.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCSkin.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCSpriteFrameCacheHelper.h" />
+    <ClInclude Include="..\..\editor-support\cocostudio\CCSSceneReader.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCTransformHelp.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCTween.h" />
     <ClInclude Include="..\..\editor-support\cocostudio\CCUtilMath.h" />
@@ -1410,10 +1414,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
