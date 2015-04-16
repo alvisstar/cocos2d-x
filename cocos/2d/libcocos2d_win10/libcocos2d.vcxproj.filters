@@ -996,24 +996,6 @@
     <ClCompile Include="..\..\deprecated\CCString.cpp">
       <Filter>deprecated</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\extensions\assets-manager\AssetsManager.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\extensions\assets-manager\AssetsManagerEx.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\extensions\assets-manager\CCEventAssetsManagerEx.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\extensions\assets-manager\CCEventListenerAssetsManagerEx.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\extensions\assets-manager\Downloader.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\extensions\assets-manager\Manifest.cpp">
-      <Filter>extension\AssetsManager</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\extensions\GUI\CCControlExtension\CCControl.cpp">
       <Filter>extension\GUI\CCControlExtensions</Filter>
     </ClCompile>
@@ -1572,9 +1554,6 @@
     <ClCompile Include="..\..\math\Vec4.cpp">
       <Filter>math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\network\HttpClient.cpp">
-      <Filter>network</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\network\HttpCookie.cpp">
       <Filter>network</Filter>
     </ClCompile>
@@ -1808,6 +1787,12 @@
     </ClCompile>
     <ClCompile Include="..\..\platform\winrt\WICImageLoader-win.cpp">
       <Filter>platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\HttpClient-winrt.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\HttpConnection-winrt.cpp">
+      <Filter>network</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2667,24 +2652,6 @@
     </ClInclude>
     <ClInclude Include="..\..\deprecated\CCString.h">
       <Filter>deprecated</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\extensions\assets-manager\AssetsManager.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\extensions\assets-manager\AssetsManagerEx.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\extensions\assets-manager\CCEventAssetsManagerEx.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\extensions\assets-manager\CCEventListenerAssetsManagerEx.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\extensions\assets-manager\Downloader.h">
-      <Filter>extension\AssetsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\extensions\assets-manager\Manifest.h">
-      <Filter>extension\AssetsManager</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\extensions\GUI\CCControlExtension\CCControl.h">
       <Filter>extension\GUI\CCControlExtensions</Filter>
@@ -3555,6 +3522,9 @@
     </ClInclude>
     <ClInclude Include="..\..\platform\winrt\WICImageLoader-win.h">
       <Filter>platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\network\HttpConnection-winrt.h">
+      <Filter>network</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
