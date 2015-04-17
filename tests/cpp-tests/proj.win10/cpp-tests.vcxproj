@@ -141,7 +141,7 @@
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -150,7 +150,7 @@
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
@@ -163,7 +163,7 @@
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -172,7 +172,7 @@
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
@@ -185,7 +185,7 @@
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -194,7 +194,7 @@
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
@@ -203,12 +203,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\cocos\platform\win10\Cocos2dRenderer.h" />
-    <ClInclude Include="..\..\..\cocos\platform\win10\OpenGLES.h" />
-    <ClInclude Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.h">
-      <DependentUpon>..\..\..\cocos\platform\win10\OpenGLESPage.xaml</DependentUpon>
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\Cocos2dRenderer.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml.h">
+      <DependentUpon>..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="..\..\..\cocos\platform\win10\pch.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\pch.h" />
     <ClInclude Include="..\Classes\ActionManagerTest\ActionManagerTest.h" />
     <ClInclude Include="..\Classes\ActionsEaseTest\ActionsEaseTest.h" />
     <ClInclude Include="..\Classes\ActionsProgressTest\ActionsProgressTest.h" />
@@ -477,7 +477,6 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.cpp.bak" />
     <None Include="cpp-tests_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -488,12 +487,12 @@
     <Image Include="Assets\WideLogo.scale-100.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\cocos\platform\win10\Cocos2dRenderer.cpp" />
-    <ClCompile Include="..\..\..\cocos\platform\win10\OpenGLES.cpp" />
-    <ClCompile Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.cpp">
-      <DependentUpon>..\..\..\cocos\platform\win10\OpenGLESPage.xaml</DependentUpon>
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" />
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.cpp" />
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp">
+      <DependentUpon>..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="..\..\..\cocos\platform\win10\pch.cpp">
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
@@ -693,9 +692,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml" />
-  </ItemGroup>
-  <ItemGroup>
     <SDKReference Include="Windows Mobile, Version=10.0.0.1" />
   </ItemGroup>
   <ItemGroup>
@@ -708,6 +704,9 @@
     <ProjectReference Include="..\..\..\external\Box2D\proj-win10\libbox2d.vcxproj">
       <Project>{0c32d479-46d5-46c3-9aa9-0a8ff8320516}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
