@@ -36,7 +36,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setOpenGLView(glview);
 
     // Set the design resolution
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
     // a bug in DirectX 11 level9-x on the device prevents ResolutionPolicy::NO_BORDER from working correctly
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::SHOW_ALL);
 #else
