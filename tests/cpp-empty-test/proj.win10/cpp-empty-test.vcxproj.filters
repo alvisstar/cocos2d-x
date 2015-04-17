@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Common">
-      <UniqueIdentifier>87ed86e7-a850-433f-88d5-d5f65cff7bf5</UniqueIdentifier>
-    </Filter>
     <Filter Include="Assets">
       <UniqueIdentifier>3d6eacf1-453c-497e-abc1-ba958539b0a5</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
@@ -29,9 +26,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.xaml.cpp" />
-    <ClCompile Include="..\..\..\cocos\platform\win10\Cocos2dRenderer.cpp" />
-    <ClCompile Include="..\..\..\cocos\platform\win10\OpenGLES.cpp" />
-    <ClCompile Include="..\..\..\cocos\platform\win10\pch.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
@@ -39,12 +33,12 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.cpp" />
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" />
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.cpp" />
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.xaml.h" />
-    <ClInclude Include="..\..\..\cocos\platform\win10\Cocos2dRenderer.h" />
-    <ClInclude Include="..\..\..\cocos\platform\win10\OpenGLES.h" />
-    <ClInclude Include="..\..\..\cocos\platform\win10\pch.h" />
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
@@ -55,6 +49,9 @@
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\Cocos2dRenderer.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\pch.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\WideLogo.scale-100.png">
@@ -72,6 +69,6 @@
     <None Include="$(ZLibBinPath)zlib.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml" />
+    <Page Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml" />
   </ItemGroup>
 </Project>
