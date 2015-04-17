@@ -74,6 +74,12 @@ OpenGLESPage::OpenGLESPage(OpenGLES* openGLES) :
 
     mSwapChainPanelSize = { swapChainPanel->RenderSize.Width, swapChainPanel->RenderSize.Height };
 
+#if _MSC_VER >= 1900
+	if (Windows::Foundation::Metadata::ApiInformation::IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+	{
+		Windows::UI::ViewManagement::StatusBar::GetForCurrentView()->HideAsync();
+	}
+#else
 #if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP)
     Windows::UI::ViewManagement::StatusBar::GetForCurrentView()->HideAsync();
 #else
@@ -82,6 +88,7 @@ OpenGLESPage::OpenGLESPage(OpenGLES* openGLES) :
     auto pointerVisualizationSettings = Windows::UI::Input::PointerVisualizationSettings::GetForCurrentView();
     pointerVisualizationSettings->IsContactFeedbackEnabled = false;
     pointerVisualizationSettings->IsBarrelButtonFeedbackEnabled = false;
+#endif
 #endif
 
     // Register our SwapChainPanel to get independent input pointer events
@@ -105,7 +112,6 @@ OpenGLESPage::OpenGLESPage(OpenGLES* openGLES) :
 
     // Run task on a dedicated high priority background thread.
     m_inputLoopWorker = ThreadPool::RunAsync(workItemHandler, WorkItemPriority::High, WorkItemOptions::TimeSliced);
-
 }
 
 OpenGLESPage::~OpenGLESPage()
@@ -190,7 +196,7 @@ void OpenGLESPage::GetSwapChainPanelSize(GLsizei* width, GLsizei* height)
 
 void OpenGLESPage::CreateRenderSurface()
 {
-    if (mOpenGLES)
+    if (mOpenGLES && mRenderSurface == EGL_NO_SURFACE)
     {
         //
         // A Custom render surface size can be specified by uncommenting the following lines.
