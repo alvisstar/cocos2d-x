@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22609.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloCpp", "HelloCpp\HelloCpp.vcxproj", "{187D3E60-961A-41EE-BC18-C510A431D22E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{B2F1FF1B-005C-490E-999E-17BD4B720B5C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbox2d", "..\cocos2d\external\Box2D\proj-win10\libbox2d.vcxproj", "{0C32D479-46D5-46C3-9AA9-0A8FF8320516}"
@@ -12,6 +10,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine", "..\cocos2d\cocos\editor-support\spine\proj.win10\libSpine.vcxproj", "{4B3BA10A-941F-4E08-8A50-8A7FCB822BB8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcocos2d", "..\cocos2d\cocos\2d\libcocos2d_win10\libcocos2d.vcxproj", "{07C2895D-720C-487D-B7B4-12C293EA533F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloCpp", "App\HelloCpp.vcxproj", "{187D3E60-961A-41EE-BC18-C510A431D22E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,24 +23,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|ARM.ActiveCfg = Debug|ARM
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|ARM.Build.0 = Debug|ARM
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|ARM.Deploy.0 = Debug|ARM
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x64.ActiveCfg = Debug|x64
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x64.Build.0 = Debug|x64
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x64.Deploy.0 = Debug|x64
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x86.ActiveCfg = Debug|Win32
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x86.Build.0 = Debug|Win32
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x86.Deploy.0 = Debug|Win32
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|ARM.ActiveCfg = Release|ARM
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|ARM.Build.0 = Release|ARM
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|ARM.Deploy.0 = Release|ARM
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x64.ActiveCfg = Release|x64
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x64.Build.0 = Release|x64
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x64.Deploy.0 = Release|x64
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x86.ActiveCfg = Release|Win32
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x86.Build.0 = Release|Win32
-		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x86.Deploy.0 = Release|Win32
 		{0C32D479-46D5-46C3-9AA9-0A8FF8320516}.Debug|ARM.ActiveCfg = Debug|ARM
 		{0C32D479-46D5-46C3-9AA9-0A8FF8320516}.Debug|ARM.Build.0 = Debug|ARM
 		{0C32D479-46D5-46C3-9AA9-0A8FF8320516}.Debug|x64.ActiveCfg = Debug|x64
@@ -77,6 +59,24 @@ Global
 		{07C2895D-720C-487D-B7B4-12C293EA533F}.Release|x64.Build.0 = Release|x64
 		{07C2895D-720C-487D-B7B4-12C293EA533F}.Release|x86.ActiveCfg = Release|Win32
 		{07C2895D-720C-487D-B7B4-12C293EA533F}.Release|x86.Build.0 = Release|Win32
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|ARM.Build.0 = Debug|ARM
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x64.ActiveCfg = Debug|x64
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x64.Build.0 = Debug|x64
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x64.Deploy.0 = Debug|x64
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x86.ActiveCfg = Debug|Win32
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x86.Build.0 = Debug|Win32
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Debug|x86.Deploy.0 = Debug|Win32
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|ARM.ActiveCfg = Release|ARM
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|ARM.Build.0 = Release|ARM
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|ARM.Deploy.0 = Release|ARM
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x64.ActiveCfg = Release|x64
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x64.Build.0 = Release|x64
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x64.Deploy.0 = Release|x64
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x86.ActiveCfg = Release|Win32
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x86.Build.0 = Release|Win32
+		{187D3E60-961A-41EE-BC18-C510A431D22E}.Release|x86.Deploy.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
