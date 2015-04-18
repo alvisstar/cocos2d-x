@@ -846,9 +846,6 @@
     <ClCompile Include="..\..\editor-support\cocostudio\WidgetCallBackHandlerProtocol.cpp">
       <Filter>cocostudio\json</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\external\flatbuffers\flatc.cpp">
-      <Filter>cocostudio\json\flatbuffers</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\external\flatbuffers\idl_gen_cpp.cpp">
       <Filter>cocostudio\json\flatbuffers</Filter>
     </ClCompile>
