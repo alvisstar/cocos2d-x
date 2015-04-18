@@ -273,9 +273,6 @@
     <ClInclude Include="..\spine-cocos2dx.h" />
     <ClInclude Include="..\spine.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\CMakeLists.txt" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4b3ba10a-941f-4e08-8a50-8a7fcb822bb8}</ProjectGuid>
     <Keyword>StaticLibrary</Keyword>
