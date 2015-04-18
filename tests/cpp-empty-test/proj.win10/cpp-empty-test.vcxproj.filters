@@ -32,10 +32,10 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.cpp" />
     <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" />
     <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.cpp" />
     <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\pch.cpp" />
+    <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.xaml.h" />
@@ -48,10 +48,10 @@
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\cocos\platform\win10\OpenGLESPage.xaml.h" />
     <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\Cocos2dRenderer.h" />
     <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.h" />
     <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\pch.h" />
+    <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\WideLogo.scale-100.png">
