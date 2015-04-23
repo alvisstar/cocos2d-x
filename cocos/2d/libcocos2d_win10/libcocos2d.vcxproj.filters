@@ -221,9 +221,6 @@
     <Filter Include="ui\Layouts">
       <UniqueIdentifier>{7a8dbff0-49af-4a9e-af07-7ecc643cf7d0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ui\shaders">
-      <UniqueIdentifier>{45be9d6e-439f-4fc2-af5c-33f3b01de478}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ui\System">
       <UniqueIdentifier>{287c8ea7-54ab-4514-94ad-bc60fca8e2f6}</UniqueIdentifier>
     </Filter>
@@ -1724,9 +1721,6 @@
     </ClCompile>
     <ClCompile Include="..\..\ui\UIVBox.cpp">
       <Filter>ui\Layouts</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ui\shaders\UIShaders.cpp">
-      <Filter>ui\shaders</Filter>
     </ClCompile>
     <ClCompile Include="..\..\ui\CocosGUI.cpp">
       <Filter>ui\System</Filter>
@@ -3460,9 +3454,6 @@
     <ClInclude Include="..\..\ui\UIVBox.h">
       <Filter>ui\Layouts</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ui\shaders\UIShaders.h">
-      <Filter>ui\shaders</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\ui\CocosGUI.h">
       <Filter>ui\System</Filter>
     </ClInclude>
@@ -3674,9 +3665,6 @@
     </None>
     <None Include="..\..\renderer\ccShader_PositionTextureColorAlphaTest.frag">
       <Filter>renderer</Filter>
-    </None>
-    <None Include="..\..\ui\shaders\ccShader_grayscale.frag">
-      <Filter>ui\shaders</Filter>
     </None>
     <None Include="..\cocos2d.def" />
   </ItemGroup>
