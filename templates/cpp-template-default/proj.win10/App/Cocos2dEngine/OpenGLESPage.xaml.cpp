@@ -36,7 +36,7 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
-#if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP)
+#if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP) || _MSC_VER >= 1900
 using namespace Windows::Phone::UI::Input;
 #endif
 
@@ -79,9 +79,14 @@ OpenGLESPage::OpenGLESPage(OpenGLES* openGLES) :
     mSwapChainPanelSize = { swapChainPanel->RenderSize.Width, swapChainPanel->RenderSize.Height };
 
 #if _MSC_VER >= 1900
-	if (Windows::Foundation::Metadata::ApiInformation::IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
-	{
-		Windows::UI::ViewManagement::StatusBar::GetForCurrentView()->HideAsync();
+    if (Windows::Foundation::Metadata::ApiInformation::IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+    {
+        Windows::UI::ViewManagement::StatusBar::GetForCurrentView()->HideAsync();
+    }
+
+    if (Windows::Foundation::Metadata::ApiInformation::IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))
+    {
+        HardwareButtons::BackPressed += ref new EventHandler<BackPressedEventArgs^>(this, &OpenGLESPage::OnBackButtonPressed);
 	}
 #else
 #if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP)
@@ -174,7 +179,7 @@ void OpenGLESPage::OnVisibilityChanged(Windows::UI::Core::CoreWindow^ sender, Wi
     }
 }
 
-#if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP)
+#if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP) || _MSC_VER >= 1900
 /*
     We set args->Handled = true to prevent the app from quitting when the back button is pressed.
     This is because this back button event happens on the XAML UI thread and not the cocos2d-x UI thread.
