@@ -180,9 +180,9 @@ void OpenGLESPage::OnVisibilityChanged(Windows::UI::Core::CoreWindow^ sender, Wi
     This is because this back button event happens on the XAML UI thread and not the cocos2d-x UI thread.
     We need to give the game developer a chance to decide to exit the app depending on where they
     are in their game. They can receive the back button event by listening for the 
-    EventKeyboard::KeyCode::KEY_BACKSPACE event. 
+    EventKeyboard::KeyCode::KEY_ESCAPE event. 
 
-    The default behavior is to exit the app if the  EventKeyboard::KeyCode::KEY_BACKSPACE event
+    The default behavior is to exit the app if the  EventKeyboard::KeyCode::KEY_ESCAPE event
     is not handled by the game.
 */
 void OpenGLESPage::OnBackButtonPressed(Object^ sender, BackPressedEventArgs^ args)
@@ -267,7 +267,13 @@ void OpenGLESPage::TerminateApp()
 {
     {
         critical_section::scoped_lock lock(mRenderSurfaceCriticalSection);
-        DestroyRenderSurface();
+
+        if (mOpenGLES)
+        {
+            mOpenGLES->DestroySurface(mRenderSurface);
+            mOpenGLES->Cleanup();
+        }
+
     }
     Windows::UI::Xaml::Application::Current->Exit();
 }
@@ -317,10 +323,21 @@ void OpenGLESPage::StartRenderLoop()
             GetSwapChainPanelSize(&panelWidth, &panelHeight);
             m_renderer.get()->Draw(panelWidth, panelHeight, m_dpi, m_orientation);
 
-            // The call to eglSwapBuffers might not be successful (i.e. due to Device Lost)
-            // If the call fails, then we must reinitialize EGL and the GL resources.
-            if (mOpenGLES->SwapBuffers(mRenderSurface) != GL_TRUE)
+            // run on main UI thread
+            if (m_renderer->AppShouldExit())
             {
+                swapChainPanel->Dispatcher->RunAsync(Windows::UI::Core::CoreDispatcherPriority::Normal, ref new DispatchedHandler([this]()
+                {
+                    TerminateApp();
+                }));
+
+                return;
+            }
+            else if (mOpenGLES->SwapBuffers(mRenderSurface) != GL_TRUE)
+            {
+                // The call to eglSwapBuffers might not be successful (i.e. due to Device Lost)
+                // If the call fails, then we must reinitialize EGL and the GL resources.
+
                 m_deviceLost = true;
 
                 if (m_renderer)
@@ -333,17 +350,6 @@ void OpenGLESPage::StartRenderLoop()
                 {
                     RecoverFromLostDevice();
                 }, CallbackContext::Any));
-
-                return;
-            }
-
-            // run on main UI thread
-            if (m_renderer->AppShouldExit())
-            {
-                swapChainPanel->Dispatcher->RunAsync(Windows::UI::Core::CoreDispatcherPriority::Normal, ref new DispatchedHandler([this]()
-                {
-                    TerminateApp();
-                }));
 
                 return;
             }

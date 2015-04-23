@@ -1722,7 +1722,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\3d\CCTerrain.h">
       <Filter>3d</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\WICImageLoader-win.h">
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\WICImageLoader-winrt.h">
       <Filter>platform\winrt</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpCookie.h">
@@ -3279,7 +3279,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\editor-support\cocostudio\CocoStudio.cpp">
       <Filter>cocostudio\json</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\WICImageLoader-win.cpp">
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\WICImageLoader-winrt.cpp">
       <Filter>platform\winrt</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network\HttpCookie.cpp">
