@@ -1776,9 +1776,6 @@
     <ClCompile Include="..\..\ui\UITextField.cpp">
       <Filter>ui\UIWidgets</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\platform\winrt\WICImageLoader-win.cpp">
-      <Filter>platform\winrt</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\network\HttpClient-winrt.cpp">
       <Filter>network</Filter>
     </ClCompile>
@@ -1790,6 +1787,9 @@
     </ClCompile>
     <ClCompile Include="..\..\editor-support\cocostudio\CCSSceneReader.cpp">
       <Filter>cocostudio\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\winrt\WICImageLoader-winrt.cpp">
+      <Filter>platform\winrt</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -3514,9 +3514,6 @@
     <ClInclude Include="..\..\ui\UITextField.h">
       <Filter>ui\UIWidgets</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\platform\winrt\WICImageLoader-win.h">
-      <Filter>platform\winrt</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\network\HttpConnection-winrt.h">
       <Filter>network</Filter>
     </ClInclude>
@@ -3525,6 +3522,9 @@
     </ClInclude>
     <ClInclude Include="..\..\editor-support\cocostudio\CCSSceneReader.h">
       <Filter>cocostudio\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\winrt\WICImageLoader-winrt.h">
+      <Filter>platform\winrt</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
