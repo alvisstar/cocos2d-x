@@ -152,15 +152,15 @@
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\*" /eiycq</Command>
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\*" /eiycq</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -194,15 +194,15 @@ xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templat
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\*" /eiycq</Command>
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\*" /eiycq</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -236,15 +236,15 @@ xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templat
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\Cocos2dEngine\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\*" /eiycq
-xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\HelloCpp\*" /eiycq</Command>
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\OpenGLES.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\Cocos2dRenderer.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\Cocos2dEngine\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.cpp" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\*" /eiycq
+xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templates\cpp-template-default\proj.win10\App\*" /eiycq</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
