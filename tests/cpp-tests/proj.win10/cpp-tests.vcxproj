@@ -145,7 +145,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4244;4056;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
@@ -154,7 +154,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4244;4056;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
@@ -167,7 +167,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4244;4056;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
@@ -176,7 +176,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4244;4056;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
@@ -189,7 +189,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4244;4056;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
@@ -198,7 +198,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4244;4056;</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
@@ -397,6 +397,7 @@
     <ClInclude Include="..\Classes\SpineTest\SpineTest.h" />
     <ClInclude Include="..\Classes\Sprite3DTest\DrawNode3D.h" />
     <ClInclude Include="..\Classes\Sprite3DTest\Sprite3DTest.h" />
+    <ClInclude Include="..\Classes\SpritePolygonTest\SpritePolygonTest.h" />
     <ClInclude Include="..\Classes\SpriteTest\SpriteTest.h" />
     <ClInclude Include="..\Classes\TerrainTest\TerrainTest.h" />
     <ClInclude Include="..\Classes\testBasic.h" />
@@ -622,6 +623,7 @@
     <ClCompile Include="..\Classes\SpineTest\SpineTest.cpp" />
     <ClCompile Include="..\Classes\Sprite3DTest\DrawNode3D.cpp" />
     <ClCompile Include="..\Classes\Sprite3DTest\Sprite3DTest.cpp" />
+    <ClCompile Include="..\Classes\SpritePolygonTest\SpritePolygonTest.cpp" />
     <ClCompile Include="..\Classes\SpriteTest\SpriteTest.cpp" />
     <ClCompile Include="..\Classes\TerrainTest\TerrainTest.cpp" />
     <ClCompile Include="..\Classes\testBasic.cpp" />

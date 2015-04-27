@@ -233,6 +233,15 @@
     <Filter Include="ui\UIWidgets\ScrollWidget">
       <UniqueIdentifier>{6fcf3801-c3e1-4097-ba82-3da0a6599555}</UniqueIdentifier>
     </Filter>
+    <Filter Include="external\poly2tri">
+      <UniqueIdentifier>{acb13cf1-4b21-4392-826a-0ca62db8afe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\poly2tri\common">
+      <UniqueIdentifier>{92cd288c-1327-4990-8ae2-dab11fa3a69c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\poly2tri\sweep">
+      <UniqueIdentifier>{bc47263f-0690-488e-b240-0b7bf763f401}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\cocos2d.cpp" />
@@ -1790,6 +1799,30 @@
     </ClCompile>
     <ClCompile Include="..\..\platform\winrt\WICImageLoader-winrt.cpp">
       <Filter>platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MarchingSquare.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SpritePolygon.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SpritePolygonCache.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\poly2tri\common\shapes.cc">
+      <Filter>external\poly2tri\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\poly2tri\sweep\advancing_front.cc">
+      <Filter>external\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\poly2tri\sweep\cdt.cc">
+      <Filter>external\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\poly2tri\sweep\sweep.cc">
+      <Filter>external\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\poly2tri\sweep\sweep_context.cc">
+      <Filter>external\poly2tri\sweep</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -3525,6 +3558,36 @@
     </ClInclude>
     <ClInclude Include="..\..\platform\winrt\WICImageLoader-winrt.h">
       <Filter>platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MarchingSquare.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SpritePolygon.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SpritePolygonCache.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\poly2tri.h">
+      <Filter>external\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\common\shapes.h">
+      <Filter>external\poly2tri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\common\utils.h">
+      <Filter>external\poly2tri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\sweep\advancing_front.h">
+      <Filter>external\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\sweep\cdt.h">
+      <Filter>external\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\sweep\sweep.h">
+      <Filter>external\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\poly2tri\sweep\sweep_context.h">
+      <Filter>external\poly2tri\sweep</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

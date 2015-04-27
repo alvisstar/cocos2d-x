@@ -374,6 +374,9 @@
     <Filter Include="Classes\UITest\CocoStudioGUITest\CustomTest\CustomWidgetCallbackBindTest">
       <UniqueIdentifier>{b70087b3-b070-48f9-9be0-41226092dcb8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\SpritePolygonTest">
+      <UniqueIdentifier>{f10b76ee-8c87-4b9f-b8af-ace7a38bb6f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -945,6 +948,9 @@
     <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.cpp" />
     <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\pch.cpp" />
     <ClCompile Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml.cpp" />
+    <ClCompile Include="..\Classes\SpritePolygonTest\SpritePolygonTest.cpp">
+      <Filter>Classes\SpritePolygonTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.xaml.h" />
@@ -1717,6 +1723,9 @@
     <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLES.h" />
     <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\pch.h" />
     <ClInclude Include="..\..\..\cocos\platform\win8.1-universal\OpenGLESPage.xaml.h" />
+    <ClInclude Include="..\Classes\SpritePolygonTest\SpritePolygonTest.h">
+      <Filter>Classes\SpritePolygonTest</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\WideLogo.scale-100.png">
