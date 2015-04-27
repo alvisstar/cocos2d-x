@@ -56,9 +56,7 @@ Cocos2dRenderer::~Cocos2dRenderer()
 void Cocos2dRenderer::Resume()
 {
     auto director = cocos2d::Director::getInstance();
-    auto glview = director->getOpenGLView();
-
-    if (!glview) 
+    if (!director->getOpenGLView())
     {
         GLViewImpl* glview = GLViewImpl::create("Test Cpp");
         glview->setDispatcher(m_dispatcher.Get());
