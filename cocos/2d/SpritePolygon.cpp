@@ -47,6 +47,13 @@ using namespace std;
 USING_NS_CC;
 using namespace cocos2d::experimental;
 
+SpritePolygon::SpritePolygon()
+    : _texture(nullptr)
+{
+
+}
+
+
 SpritePolygon *SpritePolygon::create(const std::string& file, std::vector<cocos2d::V3F_C4B_T2F>& verts, std::vector<unsigned short>& indices)
 {
     SpritePolygon *ret = new (std::nothrow) SpritePolygon();
