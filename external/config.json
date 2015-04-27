@@ -1,6 +1,6 @@
 {
-    "version":"v3-uap",
-    "zip_file_size":"122920622",
+    "version":"v3-uap-dp7",
+    "zip_file_size":"76393612",
     "repo_name":"cocos2d-x-3rd-party-libs-bin",
     "repo_parent":"https://github.com/MSOpenTech/",
     "move_dirs":{
