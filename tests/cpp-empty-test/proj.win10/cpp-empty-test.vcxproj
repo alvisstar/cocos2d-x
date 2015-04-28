@@ -149,6 +149,7 @@
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
@@ -170,6 +171,7 @@ xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templat
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
@@ -191,6 +193,7 @@ xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templat
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
@@ -212,6 +215,7 @@ xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templat
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"
@@ -233,6 +237,7 @@ xcopy "$(EngineRoot)cocos\platform\win8.1-universal\pch.h" "$(EngineRoot)templat
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <PostBuildEvent>
       <Command>echo "Copying Windows 8.1 Universal App CPP template files"

@@ -1459,6 +1459,7 @@
       <DisableSpecificWarnings>4458;4459;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>$(EngineRoot)external\win10-specific\zlib\include;$(EngineRoot)external\freetype2\include\win10\freetype2;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -1495,6 +1496,7 @@
       <DisableSpecificWarnings>4458;4459;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>$(EngineRoot)external\win10-specific\zlib\include;$(EngineRoot)external\freetype2\include\win10\freetype2;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -1513,6 +1515,7 @@
       <AdditionalIncludeDirectories>$(EngineRoot)external\win10-specific\zlib\include;$(EngineRoot)external\freetype2\include\win10\freetype2;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -1531,6 +1534,7 @@
       <DisableSpecificWarnings>4458;4459;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>$(EngineRoot)external\win10-specific\zlib\include;$(EngineRoot)external\freetype2\include\win10\freetype2;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

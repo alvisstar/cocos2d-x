@@ -149,6 +149,7 @@
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -159,6 +160,7 @@
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <LinkTimeCodeGeneration />
@@ -171,6 +173,7 @@
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -193,6 +196,7 @@
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\Classes;$(EngineRoot)cocos\platform\win8.1-universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
