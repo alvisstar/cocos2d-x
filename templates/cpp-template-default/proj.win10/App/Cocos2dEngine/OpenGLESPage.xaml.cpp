@@ -171,7 +171,7 @@ void OpenGLESPage::OnKeyPressed(CoreWindow^ sender, KeyEventArgs^ e)
 {
 	if (!e->KeyStatus.WasKeyDown)
 	{
-		log("OpenGLESPage::OnKeyPressed %d", e->VirtualKey);
+		//log("OpenGLESPage::OnKeyPressed %d", e->VirtualKey);
 		if (m_renderer)
 		{
 			m_renderer->QueueKeyboardEvent(WinRTKeyboardEventType::KeyPressed, e);
