@@ -39,6 +39,10 @@ THE SOFTWARE.
 
 #include "deprecated/CCString.h"
 
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WINRT
+#include "platform/winrt/ShaderCaching.h"
+#endif
+
 // helper functions
 
 static void replaceDefines(const std::string& compileTimeDefines, std::string& out)
@@ -225,6 +229,12 @@ bool GLProgram::initWithByteArrays(const GLchar* vShaderByteArray, const GLchar*
     _program = glCreateProgram();
     CHECK_GL_ERROR_DEBUG();
 
+#if USE_SHADER_CACHING
+    s_key = computeHash(vShaderByteArray, fShaderByteArray);
+    s_isCached = loadCachedShader(_program, s_key, s_key);
+    if (!s_isCached)
+    {
+#endif
     // convert defines here. If we do it in "compileShader" we will do it it twice.
     // a cache for the defines could be useful, but seems like overkill at this point
     std::string replacedDefines = "";
@@ -265,6 +275,9 @@ bool GLProgram::initWithByteArrays(const GLchar* vShaderByteArray, const GLchar*
     _hashForUniforms.clear();
 
     CHECK_GL_ERROR_DEBUG();
+#if USE_SHADER_CACHING
+    }
+#endif
 
     return true;
 }
@@ -546,13 +559,22 @@ bool GLProgram::link()
 
     GLint status = GL_TRUE;
 
+#if USE_SHADER_CACHING
+    if (!s_isCached) {
+#endif
     bindPredefinedVertexAttribs();
 
     glLinkProgram(_program);
+#if USE_SHADER_CACHING
+    }
+#endif
 
     parseVertexAttribs();
     parseUniforms();
 
+#if USE_SHADER_CACHING
+    if (!s_isCached) {
+#endif
     if (_vertShader)
     {
         glDeleteShader(_vertShader);
@@ -573,6 +595,10 @@ bool GLProgram::link()
         CCLOG("cocos2d: ERROR: Failed to link program: %i", _program);
         GL::deleteProgram(_program);
         _program = 0;
+    }
+#endif
+#if USE_SHADER_CACHING
+    cacheCompiledShader(_program, s_key, s_key);
     }
 #endif
 
