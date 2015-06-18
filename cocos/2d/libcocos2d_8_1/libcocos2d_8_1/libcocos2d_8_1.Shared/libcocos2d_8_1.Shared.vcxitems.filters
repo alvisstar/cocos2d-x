@@ -1839,6 +1839,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCAutoPolygon.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\external\clipper\clipper.hpp">
       <Filter>external\clipper</Filter>
+    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\ShaderCaching.h">
       <Filter>platform\winrt</Filter>
     </ClInclude>
@@ -3508,6 +3509,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCAutoPolygon.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\external\clipper\clipper.cpp">
       <Filter>external\clipper</Filter>
+    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\ShaderCaching.cpp">
       <Filter>platform\winrt</Filter>
     </ClCompile>
