@@ -228,56 +228,58 @@ bool GLProgram::initWithByteArrays(const GLchar* vShaderByteArray, const GLchar*
 {
     _program = glCreateProgram();
     CHECK_GL_ERROR_DEBUG();
+    _shaderKey = "";
+    _hasCachedShader = false;
 
 #if USE_SHADER_CACHING
-    s_key = computeHash(vShaderByteArray, fShaderByteArray);
-    s_isCached = loadCachedShader(_program, s_key, s_key);
-    if (!s_isCached)
-    {
+    _shaderKey = computeHash(vShaderByteArray, fShaderByteArray);
+    _hasCachedShader = loadCachedShader(_program, _shaderKey, _shaderKey);
+    CHECK_GL_ERROR_DEBUG();
 #endif
-    // convert defines here. If we do it in "compileShader" we will do it it twice.
-    // a cache for the defines could be useful, but seems like overkill at this point
-    std::string replacedDefines = "";
-    replaceDefines(compileTimeDefines, replacedDefines);
 
-    _vertShader = _fragShader = 0;
-
-    if (vShaderByteArray)
+    if (!_hasCachedShader)
     {
-        if (!compileShader(&_vertShader, GL_VERTEX_SHADER, vShaderByteArray, replacedDefines))
-        {
-            CCLOG("cocos2d: ERROR: Failed to compile vertex shader");
-            return false;
-       }
-    }
+        // convert defines here. If we do it in "compileShader" we will do it it twice.
+        // a cache for the defines could be useful, but seems like overkill at this point
+        std::string replacedDefines = "";
+        replaceDefines(compileTimeDefines, replacedDefines);
 
-    // Create and compile fragment shader
-    if (fShaderByteArray)
-    {
-        if (!compileShader(&_fragShader, GL_FRAGMENT_SHADER, fShaderByteArray, replacedDefines))
+        _vertShader = _fragShader = 0;
+
+        if (vShaderByteArray)
         {
-            CCLOG("cocos2d: ERROR: Failed to compile fragment shader");
-            return false;
+            if (!compileShader(&_vertShader, GL_VERTEX_SHADER, vShaderByteArray, replacedDefines))
+            {
+                CCLOG("cocos2d: ERROR: Failed to compile vertex shader");
+                return false;
+           }
         }
-    }
 
-    if (_vertShader)
-    {
-        glAttachShader(_program, _vertShader);
-    }
-    CHECK_GL_ERROR_DEBUG();
+        // Create and compile fragment shader
+        if (fShaderByteArray)
+        {
+            if (!compileShader(&_fragShader, GL_FRAGMENT_SHADER, fShaderByteArray, replacedDefines))
+            {
+                CCLOG("cocos2d: ERROR: Failed to compile fragment shader");
+                return false;
+            }
+        }
 
-    if (_fragShader)
-    {
-        glAttachShader(_program, _fragShader);
-    }
+        if (_vertShader)
+        {
+            glAttachShader(_program, _vertShader);
+        }
+        CHECK_GL_ERROR_DEBUG();
 
-    _hashForUniforms.clear();
+        if (_fragShader)
+        {
+            glAttachShader(_program, _fragShader);
+        }
 
-    CHECK_GL_ERROR_DEBUG();
-#if USE_SHADER_CACHING
+        _hashForUniforms.clear();
+
+        CHECK_GL_ERROR_DEBUG();
     }
-#endif
 
     return true;
 }
@@ -559,48 +561,44 @@ bool GLProgram::link()
 
     GLint status = GL_TRUE;
 
-#if USE_SHADER_CACHING
-    if (!s_isCached) {
-#endif
-    bindPredefinedVertexAttribs();
-
-    glLinkProgram(_program);
-#if USE_SHADER_CACHING
+    if (!_hasCachedShader) 
+    {
+        bindPredefinedVertexAttribs();
+        glLinkProgram(_program);
     }
-#endif
 
     parseVertexAttribs();
     parseUniforms();
 
-#if USE_SHADER_CACHING
-    if (!s_isCached) {
-#endif
-    if (_vertShader)
+    if (!_hasCachedShader) 
     {
-        glDeleteShader(_vertShader);
-    }
+        if (_vertShader)
+        {
+            glDeleteShader(_vertShader);
+        }
 
-    if (_fragShader)
-    {
-        glDeleteShader(_fragShader);
-    }
+        if (_fragShader)
+        {
+            glDeleteShader(_fragShader);
+        }
 
-    _vertShader = _fragShader = 0;
+        _vertShader = _fragShader = 0;
 
 #if DEBUG || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
-    glGetProgramiv(_program, GL_LINK_STATUS, &status);
+        glGetProgramiv(_program, GL_LINK_STATUS, &status);
 
-    if (status == GL_FALSE)
-    {
-        CCLOG("cocos2d: ERROR: Failed to link program: %i", _program);
-        GL::deleteProgram(_program);
-        _program = 0;
-    }
+        if (status == GL_FALSE)
+        {
+            CCLOG("cocos2d: ERROR: Failed to link program: %i", _program);
+            GL::deleteProgram(_program);
+            _program = 0;
+        }
 #endif
+
 #if USE_SHADER_CACHING
-    cacheCompiledShader(_program, s_key, s_key);
-    }
+        cacheCompiledShader(_program, _shaderKey, _shaderKey);
 #endif
+    }
 
     return (status == GL_TRUE);
 }

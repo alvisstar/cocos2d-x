@@ -35,8 +35,6 @@ NS_CC_BEGIN
 #endif
 
 #if USE_SHADER_CACHING
-static bool s_isCached = false;
-static std::string s_key = "";
 
 struct ShaderFileHeader
 {

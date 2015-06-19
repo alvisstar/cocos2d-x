@@ -499,8 +499,11 @@ protected:
     GLuint            _fragShader;
     /**Built in uniforms.*/
     GLint             _builtInUniforms[UNIFORM_MAX];
-    /**Indicate whether it has a offline shader compiler or not.*/
-    bool              _hasShaderCompiler;
+    /**Indicate whether it has a cached precompiled version of the shader.*/
+    bool              _hasCachedShader;
+    /**The key of the cached precompiled shader.*/
+    std::string       _shaderKey;
+
 
     struct flag_struct {
         unsigned int usesTime:1;
