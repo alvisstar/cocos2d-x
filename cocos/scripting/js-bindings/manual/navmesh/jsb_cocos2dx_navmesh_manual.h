@@ -24,15 +24,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
+#include "base/ccConfig.h"
+#if CC_USE_NAVMESH
+#ifndef __jsb_cocos2dx_navmesh_manual__
+#define __jsb_cocos2dx_navmesh_manual__
 
-#include "platform/CCPlatformMacros.h"
+#include "jsapi.h"
 
-NS_CC_BEGIN
+void register_all_cocos2dx_navmesh_manual(JSContext *cx, JS::HandleObject global);
 
-CC_DLL const char* cocos2dVersion()
-{
-    return "cocos2d-x-3.7beta0";
-}
-
-NS_CC_END
-
+#endif // __jsb_cocos2dx_navmesh_manual__
+#endif //#if CC_USE_NAVMESH
