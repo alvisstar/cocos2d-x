@@ -596,7 +596,10 @@ bool GLProgram::link()
 #endif
 
 #if USE_SHADER_CACHING
-        cacheCompiledShader(_program, _shaderKey, _shaderKey);
+        if (status != GL_FALSE)
+        {
+            cacheCompiledShader(_program, _shaderKey, _shaderKey);
+        }
 #endif
     }
 
